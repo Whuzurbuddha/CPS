@@ -50,6 +50,9 @@ int main() {
     {
         std::cerr << "BCM2835 init failed. Are you running as root?\n";
         return 1;
+    }else
+    {
+        setup();
     }
 
     std::uint8_t counter = 0;
